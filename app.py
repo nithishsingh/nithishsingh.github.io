@@ -1,5 +1,4 @@
 
-
 import os
 import streamlit as st
 from streamlit_navigation_bar import st_navbar
@@ -77,6 +76,7 @@ functions = {
 go_to = functions.get(page)
 if go_to:
     go_to()
+
 
 
 

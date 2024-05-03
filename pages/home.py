@@ -2,6 +2,11 @@ import streamlit as st
 from PIL import Image
 import os
 
+# Load resources
+parent_dir = os.path.dirname(os.path.abspath(__file__))
+css_file = os.path.join(parent_dir, "styles", "main.css")
+resume_file_path = os.path.join(parent_dir, "assets", "Nithish Singh.pdf")
+profile_pic_path = os.path.join(parent_dir, "assets", "passport.jpg")
 
 def show_home():
     # General settings
@@ -18,11 +23,12 @@ def show_home():
         "Blog": "https://github.com/nithishsingh",
     }
 
+
     # Load resources
-    parent_dir = os.path.dirname(os.path.abspath(__file__))
-    css_file = os.path.join(parent_dir, "styles", "main.css")
-    resume_file_path = os.path.join(parent_dir, "assets", "Nithish Singh.pdf")
-    profile_pic_path = os.path.join(parent_dir, "assets", "passport.jpg")
+    css_file = "styles\main.css"
+    resume_file_path = "assets\\NithishSingh.pdf"
+    profile_pic_path = r"assets\photo.png"
+    logo_path = r"assets\atoms.svg"
 
 
     with open(css_file) as f:
