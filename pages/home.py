@@ -21,16 +21,14 @@ def show_home():
     # Load resources
     parent_dir = os.path.dirname(os.path.abspath(__file__))
     css_file = os.path.join(parent_dir, "styles", "main.css")
-    resume_file = os.path.join(parent_dir, "assets", "Nithish Singh.pdf")
+    resume_file_path = os.path.join(parent_dir, "assets", "Nithish Singh.pdf")
     profile_pic_path = os.path.join(parent_dir, "assets", "passport.jpg")
-    logo_path = os.path.join(parent_dir, "assets", "atoms.svg")
-    urls = {"GitHub": "https://github.com/nithishsingh"}
 
 
     with open(css_file) as f:
         st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
-    with open(resume_file, "rb") as pdf_file:
+    with open(resume_file_path, "rb") as pdf_file:
         PDFbyte = pdf_file.read()
 
     profile_pic = Image.open(profile_pic_path)
