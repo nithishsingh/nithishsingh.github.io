@@ -18,10 +18,10 @@ def show_home():
     }
 
     # Load resources
-    css_file = r"styles\main.css"
-    resume_file_path = r"assets\\NithishSingh.pdf"
-    profile_pic_path = r"assets\photo.png"
-    logo_path = r"assets\atoms.svg"
+    css_file = "styles/main.css"
+    resume_file_path = "assets/NithishSingh.pdf"
+    profile_pic_path = r"assets/photo.png"
+    logo_path = r"assets/atoms.svg"
 
     with open(css_file) as f:
         st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
