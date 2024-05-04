@@ -31,7 +31,7 @@ def show_home():
     logo_path = "assets/atoms.svg"
 
 
-    with open(css_file) as f:
+    with open(css_file,'r') as f:
         st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
     with open(resume_file_path, "rb") as pdf_file:
