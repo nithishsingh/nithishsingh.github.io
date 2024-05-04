@@ -25,10 +25,10 @@ def show_home():
 
 
     # Load resources
-    css_file = "styles\main.css"
-    resume_file_path = "assets\\NithishSingh.pdf"
-    profile_pic_path = r"assets\photo.png"
-    logo_path = r"assets\atoms.svg"
+    css_file = "styles/main.css"
+    resume_file_path = "assets/NithishSingh.pdf"
+    profile_pic_path = "assets/photo.png"
+    logo_path = "assets/atoms.svg"
 
 
     with open(css_file) as f:
