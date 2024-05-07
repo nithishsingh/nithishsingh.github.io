@@ -6,7 +6,7 @@ import pages as pg
 
 
 
-pages = ["Home","Project", "GitHub"]
+pages = ["Home","Project","GitHub","About","Certification"]
 
 # --- PATH SETTINGS ---
 
