@@ -6,7 +6,7 @@ import pages as pg
 
 
 
-pages = ["Home","Project","GitHub","About","Certification"]
+pages = ["Home","Project","GitHub"]
 
 # --- PATH SETTINGS ---
 
@@ -23,7 +23,7 @@ styles = {
 		"justify-content": "center"
     },
 	"img": {
-		"padding-rig\ht": "10px",
+		"padding-right": "10px",
 	},
     "div": {
         "max-width": "31.25rem",  # Maximum width of the navigation bar
